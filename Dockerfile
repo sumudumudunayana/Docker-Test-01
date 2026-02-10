@@ -12,3 +12,7 @@ CMD [ "node", "index.js"]
 
 #To build the image run this command (docker build -t app-name app-location)
 #docker build -t first-image .
+
+#To check the images run this command
+#docker images
+
