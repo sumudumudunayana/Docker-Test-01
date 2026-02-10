@@ -24,3 +24,6 @@ CMD [ "node", "index.js"]
 
 #To check the running containers
 #docker ps
+
+#To check all the containers (running + stopped)
+#docker ps -a
