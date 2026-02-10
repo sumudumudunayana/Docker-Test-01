@@ -21,3 +21,6 @@ CMD [ "node", "index.js"]
 
 #To give a name to the container (docker run --name container-name image-name)
 #docker run --name first-container first-image
+
+#To check the running containers
+#docker ps
