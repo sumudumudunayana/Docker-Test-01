@@ -8,7 +8,8 @@ WORKDIR /app
 COPY . .
 
 #Run the app
-CMD [ "node", "index.js"]
+#CMD [ "node", "index.js"]
+CMD [ "npm", "start"]
 
 #To build the image run this command (docker build -t app-name app-location)
 #docker build -t first-image .
@@ -30,3 +31,13 @@ CMD [ "node", "index.js"]
 
 #To get the changes in the files to container we use nodemon
 #npm i nodemon
+
+#To run the program with nodemon add a start script in package.json
+# "start": "nodemon -L index.js" 
+
+#Now run the program
+#npm start
+
+#now change the starting command in Dockerfile to
+#CMD [ "npm", "start"]
+
