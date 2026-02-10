@@ -4,6 +4,10 @@ FROM node:20-alpine
 #Set the working directory inside docker
 WORKDIR /app
 
+COPY package.json .
+
+RUN npm install
+
 #Copy the files by giving source and destination
 COPY . .
 
@@ -41,3 +45,11 @@ CMD [ "npm", "start"]
 #now change the starting command in Dockerfile to
 #CMD [ "npm", "start"]
 
+#Copy the package.json file to the container and install the dependencies
+#COPY package.json .
+
+#Install the dependencies
+#RUN npm install
+
+#To remove all images and containers
+#docker system prune -a
