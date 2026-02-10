@@ -16,3 +16,5 @@ CMD [ "node", "index.js"]
 #To check the images run this command
 #docker images
 
+#To create a container run this command (docker run image-name)
+#docker run first-image
