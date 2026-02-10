@@ -53,3 +53,6 @@ CMD [ "npm", "start"]
 
 #To remove all images and containers
 #docker system prune -a
+
+#To run a docker container with a volume 
+#docker run --name new-container --rm -v /app/node_modules -v ${PWD}:/app new-image
