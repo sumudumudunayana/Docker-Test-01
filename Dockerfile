@@ -18,3 +18,6 @@ CMD [ "node", "index.js"]
 
 #To create a container run this command (docker run image-name)
 #docker run first-image
+
+#To give a name to the container (docker run --name container-name image-name)
+#docker run --name first-container first-image
