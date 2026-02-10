@@ -10,5 +10,5 @@ COPY . .
 #Run the app
 CMD [ "node", "index.js"]
 
-#To build the image run this command
-#docker build -t first-image
+#To build the image run this command (docker build -t app-name app-location)
+#docker build -t first-image .
